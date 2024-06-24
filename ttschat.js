@@ -1,6 +1,7 @@
 import OpenAI from "openai";
 import Microphone from "node-microphone";
-import * as fs from 'fs';
+import * as Speaker from 'play-sound';
+import * as fs from 'node:fs';
 import ffmpeg from "fluent-ffmpeg";
 import ffmpegPath from "ffmpeg-static";
 import axios from "axios";
@@ -13,7 +14,7 @@ dotenv.config();
 // Set the path for FFmpeg, used for audio processing
 ffmpeg.setFfmpegPath(ffmpegPath);
 
-console.log('hi')
+console.log('hi from ttschat.js')
 
 // Initialize OpenAI API client with the provided API key
 const secretKey = process.env.OPENAI_API_KEY;
